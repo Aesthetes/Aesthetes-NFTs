@@ -16,6 +16,7 @@ The structure of the fields is the one showed in the example below.
 	}
 }
 ```
+Of course, the metadata.json file is uploaded on IPFS as well and its CID is placed inside the *Domain* setting of if the issuing account. Again, remember to prepend *hash:* to the CID of the metadata file.
 
 In case all your primary storage solutions go down, you can always restore to the Ripple network to retrieve the on-chain metadata for your artwork as suggested by the XLS-16d. This metadata is placed inside the Memo fields of a transaction referred to by a CTI (as proposed in XLS-15d) that is inserted inside the currency identifier of the NFT. Therefore, the currency code for an NFT consists of 3 parts: 
 * Prefix 02 for HEX currency code.
@@ -23,7 +24,7 @@ In case all your primary storage solutions go down, you can always restore to th
 * Short name converted to HEX for the NFT to a maximum of 12 characters or less (filled up with 0's if it's less).
 
 The CTI is also used for certification purposes, so if you want to see that green check next to your artwork you better use this feature.
-The structure of the on-chain metadata fields is the one showed in the example below.
+The structure of the on-chain metadata fields is the one showed in the example below, the artwork's CID is placed under the *PrimaryUri* field.
 
 ```
 Description: The Digital Artwork \"Elysian - Logo Unveil\" was created by Claudia Cimaglia after the choice of the Elysian Logo by the XRPCommunity. NFT minted on the XRPL by Aesthetes S.R.L. - Milan.
