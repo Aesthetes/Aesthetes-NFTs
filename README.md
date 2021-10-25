@@ -31,3 +31,6 @@ PrimaryUri: hash:QmZ5AXgQtNKGzAmjPMpkZGFeK6TFFLBrzF6XoyVCMmsXeS
 ### FUNDAMENTAL RULES
 * **1000000000000000e-96 only**: only truly indivisible NFTs will be accepted, so be sure to issue only 1000000000000000e-96 coins for your NFT currency. Other values will not be accepted.
 * **Always do blackholing**: you must blackhole the issuing account otherwise the Ripple community cannot be sure that another identical token will never be issued. NFTs coming from non-blackholed accounts will not be accepted.
+
+### HOW TO SETUP THE TRUSTLINE PROPERLY
+Unfortunately there's a bug in the https://xumm.community/tokens page, we're talking with the maintenance to adjust this. Refer to the https://xrplnft.art/ page to set the trustline correctly.
