@@ -16,7 +16,7 @@ The structure of the fields is the one showed in the example below.
 	}
 }
 ```
-Of course, the metadata.json file is uploaded on IPFS as well and its CID is placed inside the *Domain* setting of if the issuing account. Again, remember to prepend *hash:* to the CID of the metadata file.
+Of course, the metadata.json file is uploaded on IPFS as well and its CID is placed inside the *Domain* setting of the NFT minting account. Again, remember to prepend *hash:* to the CID of the metadata file.
 
 In case all your primary storage solutions go down, you can always restore to the Ripple network to retrieve the on-chain metadata for your artwork as suggested by the XLS-16d. This metadata is placed inside the Memo fields of a transaction referred to by a CTI (as proposed in XLS-15d) that is inserted inside the currency identifier of the NFT. Therefore, the currency code for an NFT consists of 3 parts: 
 * Prefix 02 for HEX currency code.
