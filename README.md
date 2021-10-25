@@ -1,5 +1,5 @@
 # Aesthetes NFT standard
-### This is how we mint NFTs on XRPL
+#### This is how we mint NFTs on XRPL
 
 We chose IPFS as the storing solution for our NFTs, ensuring the durability of your artwork through time. You could use any gateway to upload your artwork, but as Aesthetes we currently work with https://gateway.pinata.cloud so we suggest for you to use it as well.
 
@@ -21,13 +21,13 @@ The structure of the fields is the one showed in the example.
 The structure of the fields is the one showed in the example.
 
 ```
-**Description**: The Digital Artwork \"Elysian - Logo Unveil\" was created by Claudia Cimaglia after the choice of the Elysian Logo by the XRPCommunity. NFT minted on the XRPL by Aesthetes S.R.L. - Milan.
-**Author**: Claudia Cimaglia
-**PrimaryUri**: hash:QmZ5AXgQtNKGzAmjPMpkZGFeK6TFFLBrzF6XoyVCMmsXeS
+Description: The Digital Artwork \"Elysian - Logo Unveil\" was created by Claudia Cimaglia after the choice of the Elysian Logo by the XRPCommunity. NFT minted on the XRPL by Aesthetes S.R.L. - Milan.
+Author: Claudia Cimaglia
+PrimaryUri: hash:QmZ5AXgQtNKGzAmjPMpkZGFeK6TFFLBrzF6XoyVCMmsXeS
 ```
 
 * Also bithomp plays a role in our NFT game (for now), so we advise you to create a Gravatar account for each NFT in order to display an artwork-related image in the most popular XRP explorer (for now). This is done leveraging the EmailHash field of the NFT minting account.
 
-FUNDAMENTAL RULES
+####FUNDAMENTAL RULES
 * **1000000000000000e-96 only**: only truly indivisible NFTs will be accepted, so be sure to issue only 1000000000000000e-96 coins for your NFT currency. Other values will not be accepted.
 * **Always do blackholing**: you must blackhole the issuing account otherwise the Ripple community cannot be sure that another identical token will never be issued. NFTs coming from non-blackholed accounts will not be accepted.
