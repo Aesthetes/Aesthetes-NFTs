@@ -33,4 +33,4 @@ PrimaryUri: hash:QmZ5AXgQtNKGzAmjPMpkZGFeK6TFFLBrzF6XoyVCMmsXeS
 * **Always do blackholing**: you must blackhole the issuing account otherwise the Ripple community cannot be sure that another identical token will never be issued. NFTs coming from non-blackholed accounts will not be accepted.
 
 ### HOW TO SETUP THE TRUSTLINE PROPERLY
-Unfortunately there's a bug in the https://xumm.community/tokens page, we're talking with the maintenance to adjust this. Refer to the https://xrplnft.art/ page to set the trustline correctly.
+Unfortunately there's a bug in the https://xumm.community/tokens page regarding NFTs, we're talking with the maintenance to adjust this. Refer to the https://xrplnft.art/ page to set the trustline correctly.
