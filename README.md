@@ -23,7 +23,7 @@ In case all your primary storage solutions go down, you can always restore to th
 * Short name converted to HEX for the NFT to a maximum of 12 characters or less (filled up with 0's if it's less).
 
 The CTI is also used for certification purposes, so if you want to see that green check next to your artwork you better use this feature.
-The structure of the fields is the one showed in the example.
+The structure of the on-chain metadata fields is the one showed in the example.
 
 ```
 Description: The Digital Artwork \"Elysian - Logo Unveil\" was created by Claudia Cimaglia after the choice of the Elysian Logo by the XRPCommunity. NFT minted on the XRPL by Aesthetes S.R.L. - Milan.
