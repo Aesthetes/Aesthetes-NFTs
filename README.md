@@ -26,7 +26,7 @@ Author: Claudia Cimaglia
 PrimaryUri: hash:QmZ5AXgQtNKGzAmjPMpkZGFeK6TFFLBrzF6XoyVCMmsXeS
 ```
 
-Also bithomp plays a role in our NFT game (for now), so we advise you to create a Gravatar account for each NFT in order to display an artwork-related image in the most popular XRP explorer (for now). This is done by leveraging the EmailHash field of the NFT minting account.
+Also bithomp plays an important role, so we advise you to create a Gravatar account for each NFT in order to display an artwork-related image (or a QR Code as sometimes we use)in the most popular XRP explorer. This is done by leveraging the EmailHash field of the NFT minting account.
 
 ### FUNDAMENTAL RULES
 * **1000000000000000e-96 only**: only truly indivisible NFTs will be accepted, so be sure to issue only 1000000000000000e-96 coins for your NFT currency. Other values will not be accepted.
