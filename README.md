@@ -17,7 +17,11 @@ The structure of the fields is the one showed in the example.
 }
 ```
 
-In case all your primary storage solutions go down, you can always restore to the Ripple network to retrieve the on-chain metadata for your artwork as suggested by the XLS-16d. This metadata is placed inside the Memo fields of a transaction referred to by a CTI (as proposed in XLS-15d), so read the documentation before proceding. The CTI is also used for certification purposes, so if you want to see that green check next to your artwork you better use this feature.
+In case all your primary storage solutions go down, you can always restore to the Ripple network to retrieve the on-chain metadata for your artwork as suggested by the XLS-16d. This metadata is placed inside the Memo fields of a transaction referred to by a CTI (as proposed in XLS-15d) that is inserted inside the currency identifier of the NFT. Therefore, the currency code for an NFT consists of 3 parts: 
+* Prefix 02 for HEX currency code
+* CTI (Concise Transaction Identifier)
+* Short name converted to HEX for the NFT to a maximum of 12 characters or less (filled up with 0's if it's less)
+The CTI is also used for certification purposes, so if you want to see that green check next to your artwork you better use this feature.
 The structure of the fields is the one showed in the example.
 
 ```
@@ -26,7 +30,7 @@ Author: Claudia Cimaglia
 PrimaryUri: hash:QmZ5AXgQtNKGzAmjPMpkZGFeK6TFFLBrzF6XoyVCMmsXeS
 ```
 
-Also bithomp plays an important role, so we advise you to create a Gravatar account for each NFT in order to display an artwork-related image (or a QR Code as sometimes we use)in the most popular XRP explorer. This is done by leveraging the EmailHash field of the NFT minting account.
+Also bithomp plays an important role, so we advise you to create a Gravatar account for each NFT in order to display an artwork-related image (or a QR Code as sometimes we use) in the most popular XRP explorer. This is done by leveraging the EmailHash field of the NFT minting account.
 
 ### FUNDAMENTAL RULES
 * **1000000000000000e-96 only**: only truly indivisible NFTs will be accepted, so be sure to issue only 1000000000000000e-96 coins for your NFT currency. Other values will not be accepted.
