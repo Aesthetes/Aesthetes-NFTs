@@ -26,13 +26,12 @@ In case all your primary storage solutions go down, you can always restore to th
 The CTI is also used for certification purposes, so if you want to see that green check next to your artwork you better use this feature.
 The structure of the on-chain metadata fields is the one showed in the example below, the artwork's CID is placed under the *PrimaryUri* field.
 
-```
-Description: The Digital Artwork \"Elysian - Logo Unveil\" was created by Claudia Cimaglia after the choice of the Elysian Logo by the XRPCommunity. NFT minted on the XRPL by Aesthetes S.R.L. - Milan.
-Author: Claudia Cimaglia
-PrimaryUri: hash:QmZ5AXgQtNKGzAmjPMpkZGFeK6TFFLBrzF6XoyVCMmsXeS
-```
+![Screenshot from 2021-10-26 15-10-33](https://user-images.githubusercontent.com/91289434/138886009-475b164b-4e6d-4049-b966-3398e9cfdbbe.png)
 
 Also bithomp plays an important role, so we advise you to create a Gravatar account for each NFT in order to display an artwork-related image (or a QR Code as sometimes we use. This is done by leveraging the EmailHash field of the NFT minting account.
+
+![Screenshot from 2021-10-26 15-12-06](https://user-images.githubusercontent.com/91289434/138886096-c95dc135-4780-4e5c-a8d9-bae62f7d1899.png)
+
 
 ### FUNDAMENTAL RULES
 * **1000000000000000e-96 only**: only truly indivisible NFTs will be accepted, so be sure to issue only 1000000000000000e-96 coins for your NFT currency. Other values will not be accepted.
