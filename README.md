@@ -18,6 +18,10 @@ The structure of the fields is the one showed in the [example below](https://gat
 ```
 Of course, the metadata.json file is uploaded on IPFS as well and its CID is placed inside the *Domain* setting of the NFT minting account. Again, remember to prepend *hash:* to the CID of the metadata file.
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/91289434/138886096-c95dc135-4780-4e5c-a8d9-bae62f7d1899.png">
+</p>
+
 In case all your primary storage solutions go down, you can always restore to the Ripple network to retrieve the on-chain metadata for your artwork as suggested by the XLS-16d. This metadata is placed inside the Memo fields of a transaction referred to by a CTI (as proposed in XLS-15d) that is inserted inside the currency identifier of the NFT. Therefore, the currency code for an NFT consists of 3 parts: 
 * Prefix 02 for HEX currency code.
 * CTI (Concise Transaction Identifier).
@@ -31,10 +35,6 @@ The structure of the on-chain metadata fields is the one showed in the [example 
 </p>
 
 Also bithomp plays an important role, so we advise you to create a Gravatar account for each NFT in order to display an artwork-related image (or a QR Code as sometimes we use. This is done by leveraging the EmailHash field of the [NFT minting account](https://bithomp.com/explorer/rrsDg7S7e7FPLJRLy3DXrzTSHYBfTeepm9 "NFT minting account").
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/91289434/138886096-c95dc135-4780-4e5c-a8d9-bae62f7d1899.png">
-</p>
 
 ### FUNDAMENTAL RULES
 * **1000000000000000e-96 only**: only truly indivisible NFTs will be accepted, so be sure to issue only 1000000000000000e-96 coins for your NFT currency. Other values will not be accepted.
