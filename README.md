@@ -26,7 +26,9 @@ In case all your primary storage solutions go down, you can always restore to th
 The CTI is also used for certification purposes, so if you want to see that green check next to your artwork you better use this feature.
 The structure of the on-chain metadata fields is the one showed in the example below, the artwork's CID is placed under the *PrimaryUri* field.
 
-![Screenshot from 2021-10-26 15-10-33](https://user-images.githubusercontent.com/91289434/138886009-475b164b-4e6d-4049-b966-3398e9cfdbbe.png)
+<p align="center">
+  <img width="460" height="300" src="ttps://user-images.githubusercontent.com/91289434/138886009-475b164b-4e6d-4049-b966-3398e9cfdbbe.png)">
+</p>
 
 Also bithomp plays an important role, so we advise you to create a Gravatar account for each NFT in order to display an artwork-related image (or a QR Code as sometimes we use. This is done by leveraging the EmailHash field of the NFT minting account.
 
