@@ -4,7 +4,7 @@
 We chose IPFS as the storing solution for our NFTs, ensuring the durability of your artwork through time. You could use any gateway to upload your artwork, but as Aesthetes we currently work with https://gateway.pinata.cloud so we suggest for you to use it as well.
 
 A JSON-formatted file containing the metadata of your artwork is required, its fields may contain the name of the token, the author and a description. 
-Besides those, the metadata must also contain a referral to your artwork in a field called *image* (also videos can be referenced but it's called like that for compliance reasons). 
+Besides those, the metadata must also contain a referral to your artwork in a field called *image* (also videos can be referenced but it's called like that for compliance reasons).
 We don't use complete links, instead we use the CID of the content calculated according to IPFS standard, in order to be able to migrate your content without having to change the metadata or using backup links. Remember to prepend *hash:* to the CID of your artwork.
 The structure of the fields is the one showed in the [example below](https://gateway.pinata.cloud/ipfs/QmaULakAx6jUYFHvV8RcSY4kKuYJGY21L6JjNUkAAFJ2aN "NFT metadata.json").
 
@@ -18,14 +18,14 @@ The structure of the fields is the one showed in the [example below](https://gat
 	}
 }
 ```
-Of course, the metadata.json file is uploaded on IPFS as well and its CID is placed inside the *Domain* setting of the NFT minting account. Again, remember to prepend *hash:* to the CID of the metadata file.
+Of course, the metadata.json file is uploaded on IPFS as well and its CID is placed inside the *Domain* setting of the NFT minting account (as proposed by XLS-14d). Again, remember to prepend *hash:* to the CID of the metadata file.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/91289434/138886096-c95dc135-4780-4e5c-a8d9-bae62f7d1899.png">
 </p>
 
 In case all your primary storage solutions go down, you can always restore to the Ripple network to retrieve the on-chain metadata for your artwork. 
-This metadata is placed inside the Memo fields of a transaction referred to by a CTI that is inserted inside the currency identifier of the NFT. Therefore, the currency code for an NFT consists of 3 parts: 
+This metadata is placed inside the Memo fields of a transaction referred to by a CTI that is inserted inside the currency identifier of the NFT (as proposed by XLS-16d). Therefore, the currency code for an NFT consists of 3 parts: 
 * Prefix 02 for HEX currency code.
 * CTI (Concise Transaction Identifier).
 * Short name converted to HEX for the NFT to a maximum of 12 characters or less (filled up with 0's if it's less).
