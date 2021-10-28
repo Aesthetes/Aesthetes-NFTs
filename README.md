@@ -24,8 +24,8 @@ Of course, the metadata.json file is uploaded on IPFS as well and its CID is pla
   <img src="https://user-images.githubusercontent.com/91289434/138886096-c95dc135-4780-4e5c-a8d9-bae62f7d1899.png">
 </p>
 
-In case all your primary storage solutions go down, you can always restore to the Ripple network to retrieve the on-chain metadata for your artwork. 
-This metadata is placed inside the Memo fields of a transaction referred to by a CTI that is inserted inside the currency identifier of the NFT (as proposed by XLS-16d). Therefore, the currency code for an NFT consists of 3 parts: 
+In case all your primary storage solutions go down, you can always restore to the Ripple network to retrieve the on-chain metadata for your artwork as suggested by XLS-16d. 
+This metadata is placed inside the Memo fields of a transaction referred to by a CTI (as proposed by XLS-16d) that is inserted inside the currency identifier of the NFT. Therefore, the currency code for an NFT consists of 3 parts: 
 * Prefix 02 for HEX currency code.
 * CTI (Concise Transaction Identifier).
 * Short name converted to HEX for the NFT to a maximum of 12 characters or less (filled up with 0's if it's less).
