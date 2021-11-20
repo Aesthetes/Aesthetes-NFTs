@@ -25,7 +25,7 @@ Of course, the metadata.json file is uploaded on IPFS as well and its CID is pla
 </p>
 
 In case all your primary storage solutions go down, you can always restore to the Ripple network to retrieve the on-chain metadata for your artwork as suggested by XLS-16d. 
-This metadata is placed inside the Memo fields of a transaction referred to by a CTI (as proposed by XLS-16d) that is inserted inside the currency identifier of the NFT. Therefore, the currency code for an NFT consists of 3 parts: 
+This metadata is placed inside the Memo fields of a transaction referred to by a CTI (as proposed by XLS-15d) that is inserted inside the currency identifier of the NFT. Therefore, the currency code for an NFT consists of 3 parts: 
 * Prefix 02 for HEX currency code.
 * CTI (Concise Transaction Identifier).
 * Short name converted to HEX for the NFT to a maximum of 12 characters or less (filled up with 0's if it's less).
@@ -42,7 +42,7 @@ This is done by leveraging the EmailHash field of the [NFT minting account](http
 
 ### FUNDAMENTAL RULES
 * **1000000000000000e-96 only**: only truly indivisible NFTs will be accepted, so be sure to issue only 1000000000000000e-96 coins for your NFT currency. Other values will not be accepted.
-* **Always do blackholing**: you must blackhole the issuing account otherwise the Ripple community cannot be sure that another identical token will never be issued. NFTs coming from non-blackholed accounts will not be accepted.
+* **Always do blackholing**: you must blackhole the issuing account otherwise the XRP community cannot be sure that another identical token will never be issued. NFTs coming from non-blackholed accounts will not be accepted.
 
 ### HOW TO SETUP THE TRUSTLINE PROPERLY
 If you want send a NFTs from a wallet to another one, you should set the Trustline toward the NFT Issuer Address. In order to set it correctly we suggest to use related page on our NFTs Visualizer  https://xrplnft.art. 
